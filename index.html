@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathe-Abenteuer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="karte">
+    <header>
+      <h1>🧮 Mathe-Abenteuer</h1>
+      <p class="untertitel">Löse Aufgaben und steige Level auf!</p>
+    </header>
+
+    <section class="status">
+      <div class="status-box">
+        <span class="status-label">Level</span>
+        <span class="status-wert" id="level">1</span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Punkte</span>
+        <span class="status-wert" id="punkte">0</span>
+      </div>
+    </section>
+
+    <div class="fortschritt">
+      <div class="fortschritt-balken" id="balken"></div>
+    </div>
+
+    <p class="aufgabe" id="aufgabe">?</p>
+
+    <div class="eingabe">
+      <input type="number" id="antwort" placeholder="?">
+      <button id="pruefen">Prüfen</button>
+    </div>
+
+    <p class="rueckmeldung" id="rueckmeldung"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
